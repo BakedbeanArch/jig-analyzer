@@ -1,0 +1,50 @@
+.create-page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  animation: fadeIn 0.7s ease-out;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.control-group {
+  margin-bottom: 2rem;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-top: auto; /* Pushes button to the bottom */
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow: hidden; /* Important for containing the scrollable grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
